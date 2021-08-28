@@ -23,4 +23,28 @@ func main() {
 
 	q := [...]int{1, 2, 3}
 	fmt.Printf("%T\n ", q)
+
+	fmt.Println("---------------------------")
+	// make empty array of 5 integers
+	var x [5] int
+	fmt.Println("emp: ", x)
+
+	// set value of x[4] 
+	x[4] = 100
+	fmt.Println("set: ", x)
+	fmt.Println("get value of x[4]: ", x[4]) 
+
+	// print length of x
+	fmt.Println("len: ", len(x))
+
+	y := [5] int {1, 2, 3, 4, 5}
+	fmt.Println("dcl: ", y)
+
+	var twoD [2][3] int
+	for i := 0; i < 2; i++{
+		for j := 0; j < 3; j++{
+			twoD[i][j] = i + j
+		}
+	}
+	fmt.Println("2D: ", twoD)
 }
